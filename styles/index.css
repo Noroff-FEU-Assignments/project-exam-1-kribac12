@@ -13,6 +13,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
+  font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
 }
 
 /*Fonts, typography*/
@@ -51,7 +52,6 @@ li {
   display: block;
   width: 8.5rem;
   height: auto;
-  margin-left: 1rem;
 }
 
 nav a {
