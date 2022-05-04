@@ -22,7 +22,6 @@
   .hamburger-icon {
     display: block;
     cursor: pointer;
-    margin: 0.7rem;
   }
 
   .hamburger-icon.active .line:nth-child(2) {
