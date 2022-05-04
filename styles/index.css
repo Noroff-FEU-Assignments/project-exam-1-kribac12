@@ -1,4 +1,4 @@
-/* imports */
+@import "/styles/imports/variables.css";
 
 /* GENERAL */
 
@@ -32,17 +32,63 @@ h3 {
 
 /* UTILITIES */
 
+li {
+  list-style: none;
+}
+
 /* GLOBAL */
 
-/*Global layout*/
+/*Body*/
 
-/*Global elements*/
+.body-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header and nav*/
 
 .logo {
   display: block;
   width: 8.5rem;
   height: auto;
+  margin-left: 1rem;
 }
+
+nav a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-header-nav);
+  padding-left: 2.5rem;
+}
+
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.line {
+  display: block;
+  height: 2.2px;
+  width: 1.8rem;
+  margin: 0.3rem auto;
+  background-color: var(--color-header-nav);
+  -webkit-transition: all 0.28s ease-in-out;
+  transition: all 0.28s ease-in-out;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+/*Footer*/
 
 /* Homepage */
 

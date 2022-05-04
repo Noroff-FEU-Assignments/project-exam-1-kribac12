@@ -12,8 +12,28 @@
     <link href="/styles/media.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
-      <a href="index.html"><img src="/images/logo.svg" class="logo" alt="Fabulous fiction logo links to homepage" /></a>
+    <div class="body-container">
+      <header class="nav-header">
+        <div>
+          <a href="index.html"><img src="/images/logo.svg" class="logo" alt="Fabulous fiction logo links to homepage" /></a>
+        </div>
+        <nav class="nav-bar">
+          <div class="hamburger-icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <p>Menu</p>
+          </div>
+          <ul class="menu-links">
+            <li class="menu-link"><a href="index.html" class="active">home</a></li>
+            <li class="menu-link"><a href="posts.html">posts</a></li>
+            <li class="menu-link"><a href="books.html">reviews</a></li>
+            <li class="menu-link"><a href="about.html">about</a></li>
+            <li class="menu-link"><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
+    <script src="/js/navigation.js"></script>
   </body>
 </html>
