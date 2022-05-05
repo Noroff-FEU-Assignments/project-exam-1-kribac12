@@ -1,4 +1,5 @@
 @import "/styles/imports/variables.css";
+@import "/styles/imports/links.css";
 
 /* GENERAL */
 
@@ -19,12 +20,15 @@ body {
 /*Fonts, typography*/
 p {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Yeseva One", Georgia, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+  color: var(--text-color);
 }
 
 .capital-p {
@@ -44,6 +48,10 @@ li {
 .body-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.content-container {
+  margin: 0rem 0.6rem;
 }
 
 /*Header and nav*/
@@ -90,7 +98,7 @@ nav a {
 
 /*Footer*/
 
-/* Homepage */
+/* HOME page */
 
 .welcome-header {
   display: block;
@@ -108,16 +116,61 @@ nav a {
 }
 
 .welcome-text {
-  color: var(--text-color);
+  font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0rem;
 }
 
-/* Contact page */
+/*About section*/
+section {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/*Blockquote inspired by https://codepen.io/chris22smith/pen/oQWavL*/
+.quote-brackets {
+  display: inline-block;
+  margin: 1.5rem;
+  background-size: cover;
+}
 
-/* Blog page */
+blockquote {
+  display: inline-block;
+  border-right: solid 0.6rem var(--border-color);
+  margin: 0;
+  padding: 1.5rem;
+  position: relative;
+}
 
-/* Blog specific page */
+blockquote::before {
+  content: "\201C";
+  color: var(--text-color);
+  font-size: 7rem;
+  position: absolute;
+  left: -1rem;
+  top: 1rem;
+}
 
-/* About page */
+cite {
+  color: var(--text-color);
+  display: block;
+  text-align: right;
+}
+
+.quote-brackets > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* CONTACT page */
+
+/* BLOG page */
+
+/* BLOG SPECIFIC page */
+
+/* ABOUT page */
