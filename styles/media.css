@@ -38,7 +38,17 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .logo {
-    margin-left: 0rem;
+  .welcome-header {
+    min-height: 14rem;
+  }
+
+  .welcome-box {
+    margin-top: 11rem;
+  }
+}
+
+@media only screen and (min-width: 1214px) {
+  .nav-header {
+    margin: 0.8rem 0rem 0.8rem 0rem;
   }
 }
