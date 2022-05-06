@@ -90,6 +90,10 @@ li {
   grid-template-columns: 1fr 1.6fr;
 }
 
+.subscribe-section {
+  border: 2px solid var(--border-color);
+}
+
 /*Header and nav*/
 
 .logo {
