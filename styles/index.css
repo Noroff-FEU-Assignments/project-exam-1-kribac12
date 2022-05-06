@@ -31,8 +31,26 @@ h3 {
   color: var(--text-color);
 }
 
-.capital-p {
+h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.h2-home {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.p-uppercase {
   font-family: "Josefin Sans", sans-serif, Tahoma, Verdana;
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 /* UTILITIES */
@@ -43,7 +61,7 @@ li {
 
 /* GLOBAL */
 
-/*Body*/
+/*Containers and cards*/
 
 .body-container {
   max-width: 1200px;
@@ -54,12 +72,27 @@ li {
   margin: 0rem 0.6rem;
 }
 
+.main-card {
+  width: 100%;
+  background-color: var(--cards-color);
+}
+
+.main-card > * {
+  margin: 0.6rem;
+}
+
+.favorites-categories {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+}
+
 /*Header and nav*/
 
 .logo {
   display: block;
   width: 8.5rem;
   height: auto;
+  object-fit: contain;
 }
 
 nav a {
@@ -117,8 +150,9 @@ nav a {
 
 .welcome-text {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
+  text-transform: none;
   margin: 0rem;
 }
 

@@ -3,7 +3,7 @@
   .menu-links {
     position: absolute;
     left: -110%;
-    top: 5.2rem;
+    top: 4.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -49,7 +49,7 @@
   }
 
   .welcome-box {
-    margin-top: 11rem;
+    margin-top: 11.5rem;
   }
 }
 
