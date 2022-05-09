@@ -73,7 +73,7 @@ li {
 }
 
 .content-container {
-  margin: 0rem 0.6rem;
+  margin: 0rem 1rem;
 }
 
 .main-card {
@@ -141,7 +141,8 @@ nav a {
 
 .fa-brands {
   color: var(--icon-color);
-  font-size: 1.4rem;
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 /*Footer*/
@@ -214,6 +215,7 @@ cite {
 }
 
 /* CONTACT page */
+
 .form-error {
   display: none;
   color: red;
@@ -227,6 +229,29 @@ cite {
   margin: 1.2rem;
   padding: 0.5rem;
   text-align: center;
+}
+
+input {
+  width: 90%;
+  height: 3rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact-info a {
+  font-size: 1.26rem;
+  margin-left: 1rem;
+}
+
+.contact-info:first-child {
+  margin-top: 2rem;
+}
+
+label p {
+  margin: 2rem 0rem 0.6rem 0rem;
 }
 
 /* BLOG page */
