@@ -137,6 +137,13 @@ nav a {
   align-items: center;
 }
 
+/*Icons*/
+
+.fa-brands {
+  color: var(--icon-color);
+  font-size: 1.4rem;
+}
+
 /*Footer*/
 
 /* HOME page */

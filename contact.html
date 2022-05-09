@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Yeseva+One&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5721207729.js" crossorigin="anonymous"></script>
     <link href="/styles/index.css" rel="stylesheet" />
     <link href="/styles/media.css" rel="stylesheet" />
   </head>
@@ -28,14 +29,70 @@
             <li class="menu-link"><a href="index.html">home</a></li>
             <li class="menu-link"><a href="posts.html">posts</a></li>
             <li class="menu-link"><a href="books.html">reviews</a></li>
-            <li class="menu-link"><a href="about.html">about</a></li>
-            <li class="menu-link"><a href="contact.html" class="active">contact</a></li>
+            <li class="menu-link"><a href="about.html" class="active">about</a></li>
+            <li class="menu-link"><a href="contact.html">contact</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="content-container">
-          <h1>Contact me</h1>
+          <section class="contact-section">
+            <h1>Contact me</h1>
+            <div class="contact-info-container">
+              <h2>Find me on</h2>
+              <div class="contact-info">
+                <div>
+                  <i class="fa-brands fa-facebook-square"></i>
+                  <a href="http://www.facebook.com">Facebook</a>
+                </div>
+                <div>
+                  <i class="fa-brands fa-goodreads"></i>
+                  <a href="http://www.goodreads.com">Goodreads</a>
+                </div>
+                <div>
+                  <i class="fa-brands fa-instagram-square"></i>
+                  <a href="http://www.instagram.com">Instagram</a>
+                </div>
+                <div>
+                  <i class="fa-brands fa-pinterest-square"></i>
+                  <a href="http://www.pinterest.com">Pinterest</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-container">
+              <h2>Or fill out this form</h2>
+              <form method="POST" class="contactForm">
+                <div>
+                  <label>
+                    <p>Full name</p>
+                    <div class="form-error" id="full-name-error">Please enter a name longer than 5 characters</div>
+                    <input name="name" class="form-input" id="fullName" />
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <p>E-mail address</p>
+                    <div class="form-error" id="email-error">Please enter a valid email address</div>
+                    <input name="email" class="form-input" id="email" />
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <p>Subject</p>
+                    <div class="form-error" id="subject-error">Please enter a subject longer than 15 characters</div>
+                    <input name="subject" class="form-input" id="subject" />
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <p>Message</p>
+                    <div class="form-error" id="message-error">Please enter a message longer than 25 characters</div>
+                    <input name="message" class="form-input" id="message" />
+                  </label>
+                </div>
+              </form>
+            </div>
+          </section>
         </div>
       </main>
       <footer></footer>
