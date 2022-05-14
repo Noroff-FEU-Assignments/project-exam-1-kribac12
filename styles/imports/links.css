@@ -7,5 +7,6 @@ a {
 .cta {
   border: 2px solid var(--text-color);
   padding: 1rem 1.7rem;
+  width: 200px;
   margin: 0 auto;
 }
