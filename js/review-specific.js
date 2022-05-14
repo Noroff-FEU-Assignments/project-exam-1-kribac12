@@ -4,11 +4,11 @@ const id = params.get("id");
 
 console.log(id);
 
-const baseUrl = "http://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
+const baseUrl = "http://fabulousfictio.wpengine.com/wp-json/wp/v2/review/";
 
 console.log(baseUrl);
 
-const url = baseUrl + id;
+const url = baseUrl + id + "?acf_format=standard";
 
 console.log(url);
 
@@ -28,10 +28,11 @@ async function showReview() {
 
     reviewSpecificContainer.innerHTML += `
     <h1>${review.acf.heading}<h1>
+    <h2 class="post-subheading">${review.acf.subheading}</h2>
         <img src=${review.acf.image} alt ="${review.acf.heading}" class="review-img"/>
-        <h2 class="post-subheading">${review.acf.subheading}</h2>
+        
         <div class="synopsis"><h3>Synopsis:</h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
-       <div class="review-paragraph"><h3>Synopsis:</h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${review.acf.paragraph4}</p></div>`;
+       <div class="review-paragraph"><h3>Review:</h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${review.acf.paragraph4}</p></div>`;
   } catch (error) {
     console.log(error);
     reviewSpecificContainer.innerHTML = "error";
