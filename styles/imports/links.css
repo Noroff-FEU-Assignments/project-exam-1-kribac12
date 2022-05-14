@@ -9,4 +9,7 @@ a {
   padding: 1rem 1.7rem;
   width: 200px;
   margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }

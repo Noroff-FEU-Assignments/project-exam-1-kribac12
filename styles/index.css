@@ -76,14 +76,18 @@ li {
   margin: 0rem 1rem;
 }
 
-.main-card {
+.color-card {
   width: 100%;
   background-color: var(--cards-color);
   padding: 0.2rem 1rem;
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
-.main-card > * {
+.review-card {
+  max-width: 465px;
+}
+
+.color-card > * {
 }
 
 .favorites-categories {
