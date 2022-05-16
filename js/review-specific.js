@@ -4,7 +4,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const baseUrl = "http://fabulousfictio.wpengine.com/wp-json/wp/v2/review/";
+const baseUrl = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review/";
 
 console.log(baseUrl);
 

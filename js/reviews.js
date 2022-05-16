@@ -1,6 +1,6 @@
 const reviewContainer = document.querySelector(".review-container");
 
-const reviewUrl = "http://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
+const reviewUrl = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
 
 async function getReviews() {
   try {
