@@ -50,11 +50,11 @@ const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 
 arrowLeft.onclick = function () {
-  const carouselWidth = postsSliderContainer.offsetWidth;
-  postsSliderContainer.scrollLeft -= carouselWidth;
+  const carouselWidth = sliderContainer.offsetWidth;
+  sliderContainer.scrollLeft -= carouselWidth;
 };
 
 arrowRight.onclick = function () {
-  const carouselWidth = postsSliderContainer.offsetWidth;
-  postsSliderContainer.scrollLeft += carouselWidth;
+  const carouselWidth = sliderContainer.offsetWidth;
+  sliderContainer.scrollLeft += carouselWidth;
 };

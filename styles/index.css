@@ -50,6 +50,11 @@ h2 {
   text-transform: uppercase;
 }
 
+.heading-posts {
+  display: inline-block;
+  max-width: 300px;
+  font-size: 1rem;
+}
 .p-uppercase {
   font-family: "Josefin Sans", sans-serif, Tahoma, Verdana;
   font-weight: 300;
@@ -85,9 +90,6 @@ li {
 
 .review-card {
   max-width: 465px;
-}
-
-.color-card > * {
 }
 
 .favorites-categories {
@@ -153,7 +155,8 @@ nav a {
 
 /*Icons*/
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
   color: var(--icon-color);
   font-size: 2rem;
   padding-top: 1rem;
@@ -191,12 +194,13 @@ nav a {
 .posts-slider-wrap {
   width: 100%;
   display: inline-flex;
+  gap: 1rem;
   align-items: center;
-  justify-content: space-between;
 }
 
 .posts-slider-container {
   display: flex;
+  gap: 1rem;
   scroll-behavior: smooth;
   position: relative;
   width: 100%;
@@ -210,16 +214,13 @@ nav a {
   position: relative;
   align-self: center;
   overflow: hidden;
-  min-width: 35%;
-  padding: 1rem;
+  min-width: 50%;
 }
 
-.recent-card:hover {
+.recent-card:hover,
+#arrow-right,
+#arrow-left {
   cursor: pointer;
-}
-
-#arrow-right {
-  padding-left: 1rem;
 }
 
 /*About section*/

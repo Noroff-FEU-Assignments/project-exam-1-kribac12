@@ -62,6 +62,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .recent-card {
+    min-width: 35%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
