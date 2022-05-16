@@ -212,7 +212,6 @@ nav a {
 
 .recent-card {
   position: relative;
-  align-self: center;
   overflow: hidden;
   min-width: 50%;
 }
