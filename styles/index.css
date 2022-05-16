@@ -186,6 +186,42 @@ nav a {
   margin: 0rem;
 }
 
+/*Carousel slider*/
+
+.posts-slider-wrap {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts-slider-container {
+  display: flex;
+  scroll-behavior: smooth;
+  position: relative;
+  width: 100%;
+}
+
+.posts-slider-container:-webkit-scrollbar {
+  display: none;
+}
+
+.recent-card {
+  position: relative;
+  align-self: center;
+  overflow: hidden;
+  min-width: 35%;
+  padding: 1rem;
+}
+
+.recent-card:hover {
+  cursor: pointer;
+}
+
+#arrow-right {
+  padding-left: 1rem;
+}
+
 /*About section*/
 
 img {
