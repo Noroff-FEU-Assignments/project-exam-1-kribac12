@@ -56,7 +56,8 @@ h2 {
   margin-top: 0.3rem;
 }
 
-.p-uppercase {
+.p-uppercase,
+h4 {
   font-family: "Josefin Sans", sans-serif, Tahoma, Verdana;
   font-weight: 300;
   font-size: 1.1rem;
@@ -177,6 +178,20 @@ img {
 }
 
 /*Footer*/
+
+footer {
+  border-top: 1px solid var(--text-color);
+  margin: 1rem;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section a {
+  text-transform: capitalize;
+  padding: 0.6rem 0rem;
+}
 
 /* HOME page */
 

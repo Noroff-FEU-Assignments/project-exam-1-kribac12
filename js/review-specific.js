@@ -30,6 +30,8 @@ async function showReview() {
         <img src=${review.acf.image} alt ="${review.acf.heading}" class="review-img"/></div>
         <div class="synopsis"><h3>Synopsis:</h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
        <div class="review-paragraph"><h3>Review:</h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${review.acf.paragraph4}</p></div>`;
+
+    showModal();
   } catch (error) {
     console.log(error);
     reviewSpecificContainer.innerHTML = "error";
@@ -37,3 +39,26 @@ async function showReview() {
 }
 
 showReview();
+
+function showModal() {
+  const img = document.querySelector(".review-img");
+  const modal = document.querySelector(".image-modal");
+}
+/*function showModal() {
+  const img = document.querySelector(".review-img");
+  const modal = document.querySelector(".image-modal");
+
+  (img.onclick = function (event) {
+    modal.style.display = "block";
+    modal.innerHTML = `<img src=${review.acf.image} alt ="${review.acf.heading}" class="review-img-bigger"/>`;
+
+    if (!event.target.closest("div")) {
+      closeModal();
+    }
+  }),
+    false;
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}*/

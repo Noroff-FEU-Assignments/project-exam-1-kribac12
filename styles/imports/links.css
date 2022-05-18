@@ -15,17 +15,26 @@ a {
   text-align: center;
 }
 
+.cta-color {
+  background: var(--cta-color);
+  text-transform: uppercase;
+}
+
 /*Hover, focus and active styles*/
 
-a:hover,
-.cta:hover {
-  cursor: pointer;
+.active {
+  background-color: var(--background-color);
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 .cta:hover,
 nav a:hover {
   background-color: var(--background-color);
   border-color: var(--border-color);
+  font-weight: bold;
 }
 
 nav a:focus,
