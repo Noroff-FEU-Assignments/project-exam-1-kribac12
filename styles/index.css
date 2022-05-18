@@ -126,11 +126,12 @@ section {
 }
 
 nav a {
+  cursor: pointer;
   display: block;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-color);
-  padding-left: 2.5rem;
+  padding: 1.5rem 1rem;
 }
 
 .nav-header {
@@ -157,6 +158,13 @@ nav a {
 .menu-links {
   display: flex;
   align-items: center;
+}
+
+/*Images*/
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*Icons*/
@@ -230,16 +238,19 @@ nav a {
 
 /*About section*/
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+.profile-img {
+  display: block;
+  width: 80%;
+  border-radius: 50%;
 }
+
 /*Blockquote inspired by https://codepen.io/chris22smith/pen/oQWavL*/
 .quote-brackets {
   display: inline-block;
-  margin: 1.5rem;
+  margin: 1.5rem 0rem;
+  padding-left: 1rem;
   background-size: cover;
+  background-color: var(--background-color);
 }
 
 blockquote {

@@ -5,6 +5,7 @@ a {
 }
 
 .cta {
+  cursor: pointer;
   border: 2px solid var(--text-color);
   padding: 1rem 1.7rem;
   width: 200px;
@@ -12,4 +13,27 @@ a {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+/*Hover, focus and active styles*/
+
+a:hover,
+.cta:hover {
+  cursor: pointer;
+}
+
+.cta:hover,
+nav a:hover {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+nav a:focus,
+.cta:focus {
+  background-color: var(--cards-color);
+}
+
+nav a:active,
+.cta:active {
+  border-color: var(--border-color);
 }

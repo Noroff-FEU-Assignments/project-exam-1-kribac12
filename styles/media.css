@@ -76,6 +76,10 @@
   .welcome-box {
     margin-top: 11.5rem;
   }
+
+  .content-container {
+    margin: 0rem 4rem;
+  }
 }
 
 @media only screen and (min-width: 1214px) {
