@@ -22,14 +22,12 @@ async function showReview() {
     console.log(review);
 
     document.title = "";
-    document.title = `${review.acf.heading}`;
-
-    reviewSpecificContainer.classList.remove("loader");
+    document.title = `Fabulous fiction | ${review.acf.heading}`;
 
     reviewSpecificContainer.innerHTML += `
-    <h1>${review.acf.heading}<h1>
+    <div><h1 class="post-heading">${review.acf.heading}</h1>
     <h2 class="post-subheading">${review.acf.subheading}</h2>
-        <img src=${review.acf.image} alt ="${review.acf.heading}" class="review-img"/>
+        <img src=${review.acf.image} alt ="${review.acf.heading}" class="review-img"/></div>
         
         <div class="synopsis"><h3>Synopsis:</h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
        <div class="review-paragraph"><h3>Review:</h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${review.acf.paragraph4}</p></div>`;
