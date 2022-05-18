@@ -22,7 +22,7 @@ a {
 
 /*Hover, focus and active styles*/
 
-.active {
+.current {
   background-color: var(--background-color);
 }
 
@@ -32,7 +32,7 @@ a:hover {
 
 .cta:hover,
 nav a:hover {
-  background-color: var(--background-color);
+  background-color: var(--border-color);
   border-color: var(--border-color);
   font-weight: bold;
 }
@@ -44,5 +44,5 @@ nav a:focus,
 
 nav a:active,
 .cta:active {
-  border-color: var(--border-color);
+  border-color: var(--cards-color);
 }
