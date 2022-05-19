@@ -8,6 +8,7 @@ const url = baseUrl + id + "?acf_format=standard";
 const reviewSpecificContainer = document.querySelector(".review-specific-container");
 const imageModal = document.querySelector(".image-modal");
 
+//Function to show the review and modal image
 async function showReview() {
   try {
     const response = await fetch(url);
@@ -17,6 +18,7 @@ async function showReview() {
 
     createReview(review);
 
+    //Function to open modal
     if (createReview) {
       const image = document.querySelector(".review-specific-container img");
 
@@ -24,11 +26,6 @@ async function showReview() {
         imageModal.style.display = "block";
       };
     }
-    window.onclick = function (event) {
-      if (event.target === imageModal) {
-        imageModal.style.display = "none";
-      }
-    };
   } catch (error) {
     console.log(error);
     reviewSpecificContainer.innerHTML = "error";
@@ -37,6 +34,7 @@ async function showReview() {
 
 showReview();
 
+//Function to create HTML for review
 function createReview(review) {
   document.title = "";
   document.title = `Fabulous fiction | ${review.acf.heading}`;
@@ -51,5 +49,15 @@ function createReview(review) {
     review.acf.paragraph4
   }</p></div>`;
 
-  imageModal.innerHTML += `<img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/>`;
+  imageModal.innerHTML += ` <i class="fa-solid fa-circle-xmark"><p>Close</p></i><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/>`;
+}
+
+document.addEventListener("click", closeImageModal);
+
+// Function to close modal
+function closeImageModal(event) {
+  const closeIcon = document.querySelector(".fa-circle-xmark");
+  if (event.target === imageModal || event.target === closeIcon) {
+    imageModal.style.display = "none";
+  }
 }

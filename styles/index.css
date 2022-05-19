@@ -73,6 +73,7 @@ h4,
 
 .publish-date-p {
   margin-top: 1.6rem;
+  font-weight: 300;
 }
 
 /* UTILITIES */
@@ -189,6 +190,12 @@ img {
   padding-top: 1rem;
 }
 
+.fa-circle-xmark {
+  z-index: 1;
+  top: 1rem;
+  right: 0.5rem;
+  position: absolute;
+}
 /*Footer*/
 
 footer {
@@ -362,6 +369,8 @@ label p {
 .image-modal {
   z-index: 1;
   display: none;
+  width: 100%;
+  height: 100%;
   position: fixed;
   background-color: rgb(234, 234, 234, 0.9);
   top: 0rem;
@@ -369,7 +378,7 @@ label p {
 }
 
 .image-modal img {
-  max-width: 620px;
+  width: 620px;
   height: auto;
   position: fixed;
   top: 50%;
