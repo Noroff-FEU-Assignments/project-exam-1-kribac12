@@ -57,7 +57,8 @@ h2 {
 }
 
 .p-uppercase,
-h4 {
+h4,
+.post-subheading {
   font-family: "Josefin Sans", sans-serif, Tahoma, Verdana;
   font-weight: 300;
   font-size: 1.1rem;
@@ -68,6 +69,10 @@ h4 {
   display: flex;
   justify-content: right;
   padding: 2rem 0rem;
+}
+
+.publish-date-p {
+  margin-top: 1.6rem;
 }
 
 /* UTILITIES */
@@ -352,5 +357,24 @@ label p {
 /* BLOG page */
 
 /* BLOG SPECIFIC page */
+
+/*Modal*/
+.image-modal {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  background-color: rgb(234, 234, 234, 0.9);
+  top: 0rem;
+  left: 0rem;
+}
+
+.image-modal img {
+  max-width: 620px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* ABOUT page */
