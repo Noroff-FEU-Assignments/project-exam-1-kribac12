@@ -13,6 +13,8 @@ a {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .cta-color {
