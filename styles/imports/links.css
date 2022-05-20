@@ -22,6 +22,10 @@ a {
   text-transform: uppercase;
 }
 
+button {
+  background-color: var(--cards-color);
+}
+
 /*Hover, focus and active styles*/
 
 .current {
