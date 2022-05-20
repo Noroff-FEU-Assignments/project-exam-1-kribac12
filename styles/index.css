@@ -361,6 +361,10 @@ label p {
   margin: 2rem 0rem 0.6rem 0rem;
 }
 
+.message {
+  height: 8rem;
+}
+
 /* BLOG page */
 
 /* BLOG SPECIFIC page */
