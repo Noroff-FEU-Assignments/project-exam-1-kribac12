@@ -45,6 +45,7 @@ h2 {
   grid-column: -1/1;
 }
 
+/*fonts specific*/
 .h2-home {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -74,6 +75,10 @@ h4,
 .publish-date-p {
   margin-top: 1.6rem;
   font-weight: 300;
+}
+
+.review-paragraphs h3 {
+  margin-top: 0rem;
 }
 
 /* UTILITIES */
@@ -388,6 +393,12 @@ label p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*review specific container*/
+
+.review-specific-container {
+  max-width: 465px;
 }
 
 /* ABOUT page */

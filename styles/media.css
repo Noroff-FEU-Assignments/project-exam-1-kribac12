@@ -75,6 +75,34 @@
   .footer-section {
     grid-template-columns: 1fr 1fr 2fr;
   }
+
+  /*review specific page*/
+
+  .review-specific-container {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "image paragraphs"
+      "synopsis paragraphs";
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .headings-review {
+    grid-area: heading;
+  }
+  .image-review {
+    grid-area: image;
+  }
+
+  .review-paragraphs {
+    grid-area: paragraphs;
+  }
+
+  .synopsis {
+    grid-area: synopsis;
+    max-width: 465px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

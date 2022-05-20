@@ -40,21 +40,22 @@ function createReview(review) {
   document.title = `Fabulous fiction | ${review.acf.heading}`;
 
   reviewSpecificContainer.innerHTML += `
-<div><h1 class="post-heading">${review.acf.heading}</h1>
+<div class="headings-review"><h1 class="post-heading">${review.acf.heading}</h1>
 <h2 class="post-subheading">${review.acf.subheading}</h2>
-<p class="publish-date-p">Published: ${review.date.replace(`T`, ` | Time: `)}</p>
-    <img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div>
-    <div class="synopsis"><h3>Synopsis:</h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
-   <div class="review-paragraph"><h3>Review:</h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${
+<p class="publish-date-p">Published: ${review.date.split(`T`)[0]}</p></div>
+    <div class="image-review"><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div>
+    <div class="synopsis"><h3>Synopsis </h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
+   <div class="review-paragraphs"><h3>Review </h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${
     review.acf.paragraph4
   }</p></div>`;
 
-  imageModal.innerHTML += ` <i class="fa-solid fa-circle-xmark"><p>Close</p></i><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/>`;
+  imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }
+
+//Event listener and function to close modal
 
 document.addEventListener("click", closeImageModal);
 
-// Function to close modal
 function closeImageModal(event) {
   const closeIcon = document.querySelector(".fa-circle-xmark");
   if (event.target === imageModal || event.target === closeIcon) {
