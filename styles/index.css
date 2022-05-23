@@ -217,6 +217,7 @@ img {
   align-items: center;
   top: 1rem;
   right: 0.5rem;
+  padding-top: 5rem;
   position: absolute;
   background-color: rgb(234, 234, 234, 0.9);
 }
