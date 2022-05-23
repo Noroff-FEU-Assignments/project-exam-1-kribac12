@@ -49,7 +49,7 @@ function createReview(review) {
     <div class="synopsis"><h3>Synopsis </h3> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
    <div class="review-paragraphs"><h3>Review </h3> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${
     review.acf.paragraph4
-  }</p></div>`;
+  }</p><p>${review.acf.paragraph5}</p></div>`;
 
   imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }

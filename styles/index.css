@@ -427,4 +427,9 @@ label p {
   max-width: 465px;
 }
 
+.review-paragraphs p,
+.synopsis p {
+  line-height: 1.2;
+  margin: 1rem 0rem;
+}
 /* ABOUT page */
