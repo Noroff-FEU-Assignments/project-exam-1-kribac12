@@ -37,6 +37,7 @@ h1 {
   text-transform: uppercase;
   display: grid;
   grid-column: -1/1;
+  padding-top: 6.5rem;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h2 {
 .h2-home {
   font-size: 1.2rem;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 .heading-posts {
@@ -135,10 +137,6 @@ li {
   justify-content: center;
 }
 
-section {
-  margin-top: 2rem;
-}
-
 /*Header and nav*/
 
 .logo {
@@ -160,8 +158,15 @@ nav a {
 .nav-header {
   display: flex;
   flex-wrap: wrap;
+  z-index: 1200;
+  background: #ffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
   justify-content: space-between;
-  margin: 0.8rem 0.6rem 0rem 0.6rem;
+  align-items: center;
+  padding: 0rem 1.6rem;
 }
 
 .hamburger-icon {
@@ -190,8 +195,8 @@ img {
   object-fit: cover;
 }
 
-.review-card img:hover,
-.review-card img:focus {
+.review-img:hover,
+.review-img:focus {
   filter: brightness(0.6);
 }
 
@@ -266,6 +271,7 @@ footer {
   background: url(/images/header.jpg);
   background-size: cover;
   min-height: 8rem;
+  padding-top: 6rem;
 }
 
 .welcome-box {
@@ -282,6 +288,7 @@ footer {
   font-weight: 300;
   text-transform: none;
   margin: 0rem;
+  padding-top: 0rem;
 }
 
 /*Carousel slider*/

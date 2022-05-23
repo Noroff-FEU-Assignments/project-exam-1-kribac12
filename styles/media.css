@@ -117,13 +117,14 @@
   .content-container {
     margin: 0rem 4rem;
   }
+
+  .nav-header {
+    justify-content: left;
+    padding: 0rem;
+  }
 }
 
 @media only screen and (min-width: 1214px) {
-  .nav-header {
-    margin: 0.8rem 0rem 0.8rem 0rem;
-  }
-
   .review-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4.3rem;
