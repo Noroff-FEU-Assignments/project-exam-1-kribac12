@@ -18,7 +18,7 @@ async function showReview() {
 
     createReview(review);
 
-    //Function to open modal
+    /*Function to open modal (inspired by http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html)*/
     if (createReview) {
       const image = document.querySelector(".review-specific-container img");
 
@@ -39,6 +39,8 @@ function createReview(review) {
   document.title = "";
   document.title = `Fabulous fiction | ${review.acf.heading}`;
 
+  reviewSpecificContainer.classList.remove("loader");
+
   reviewSpecificContainer.innerHTML += `
 <div class="headings-review"><h1 class="post-heading">${review.acf.heading}</h1>
 <h2 class="post-subheading">${review.acf.subheading}</h2>
@@ -52,7 +54,7 @@ function createReview(review) {
   imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }
 
-//Event listener and function to close modal
+/*Event listener and function to close modal (inspired by: https://stackoverflow.com/questions/70539763/how-do-i-open-modal-with-javascript-without-using-jquery)*/
 
 document.addEventListener("click", closeImageModal);
 

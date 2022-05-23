@@ -193,13 +193,40 @@ img {
   color: var(--icon-color);
   font-size: 2rem;
   padding-top: 1rem;
+  cursor: pointer;
 }
 
 .fa-circle-xmark {
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 1rem;
   right: 0.5rem;
   position: absolute;
+  background-color: rgb(234, 234, 234, 0.9);
+}
+
+/*Loader*/
+
+.loader {
+  border: 1rem solid var(--cards-color);
+  border-top: 1rem solid var(--icon-color);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+  animation: spin 1.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*Footer*/
 
@@ -262,7 +289,6 @@ footer {
   gap: 1rem;
   scroll-behavior: smooth;
   position: relative;
-  width: 100%;
 }
 
 .posts-slider-container:-webkit-scrollbar {

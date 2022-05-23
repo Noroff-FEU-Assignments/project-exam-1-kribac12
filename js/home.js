@@ -1,11 +1,14 @@
 const sliderContainer = document.querySelector(".posts-slider-container");
+const sliderWrap = document.querySelector(".posts-slider-wrap");
 const url = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
 
 async function displayRecentReviews() {
   try {
     const response = await fetch(url);
     const reviews = await response.json();
-    sliderContainer.innerHTML = "";
+
+    sliderContainer.classList.remove("loader");
+
     sliderContainer.style.overflowX = "scroll";
 
     for (let i = 0; i < reviews.length; i++) {
