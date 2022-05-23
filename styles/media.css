@@ -123,4 +123,9 @@
   .nav-header {
     margin: 0.8rem 0rem 0.8rem 0rem;
   }
+
+  .review-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4.3rem;
+  }
 }
