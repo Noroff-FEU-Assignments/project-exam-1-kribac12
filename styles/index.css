@@ -393,8 +393,9 @@ cite {
 }
 
 input {
-  width: 90%;
+  width: 100%;
   height: 3rem;
+  margin: 0.5rem 0rem 2rem 0rem;
 }
 
 .contact-info {
@@ -407,16 +408,21 @@ input {
   margin-left: 1rem;
 }
 
-.contact-info:first-child {
+.contact-info:first-child,
+.contact-form:first-child {
   margin-top: 2rem;
 }
 
-label p {
-  margin: 2rem 0rem 0.6rem 0rem;
+label {
+  font-size: 20px;
 }
 
 .message {
   height: 8rem;
+}
+
+label span {
+  font-size: 16px;
 }
 
 /* BLOG page */
