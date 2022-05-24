@@ -5,11 +5,10 @@ a {
 }
 
 .cta {
+  display: block;
   cursor: pointer;
   border: 2px solid var(--text-color);
   padding: 1rem 1.7rem;
-  width: 200px;
-  margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -19,13 +18,29 @@ a {
   font-size: 18px;
 }
 
+.cta-wide {
+  width: 250px;
+}
+
+.cta-small {
+  width: 180px;
+  text-transform: none;
+}
+
+.cta-center {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .cta-color {
   background: var(--cta-color);
   text-transform: uppercase;
 }
 
 button {
-  background-color: var(--cards-color);
+  background-color: var(--icon-color);
+  border: 1px solid var(--icon-color);
 }
 
 /*Hover, focus and active styles*/

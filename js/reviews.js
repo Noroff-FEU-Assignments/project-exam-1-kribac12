@@ -27,7 +27,7 @@ async function displayReviews() {
                 <p class="review-card-p">Author: ${reviews[i].acf.author}</p>
                 <p class="review-card-p">Genre: ${reviews[i].acf.genre}</p>
                 <p class="review-card-p">Quote: "${reviews[i].acf.quote}"</p>
-                <div class=cta>Read review</div> </div>
+                <div class="cta cta-small">Read review</div> </div>
                 </a>`;
     }
   } catch (error) {
