@@ -40,7 +40,7 @@
 
 @media only screen and (min-width: 488px) {
   /*grid, flex, containers*/
-  .about-grid {
+  .about-grid-homepage {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -78,29 +78,34 @@
 
   /*review specific page*/
 
-  .review-specific-container {
+  .review-specific-container,
+  .about-grid {
     display: grid;
     grid-template-areas:
       "heading heading"
       "image paragraphs"
-      "synopsis paragraphs";
+      "color-card paragraphs";
     gap: 1.5rem;
     max-width: 100%;
   }
 
-  .headings-review {
+  .headings-review,
+  .about-heading {
     grid-area: heading;
   }
-  .image-review {
+  .image-review,
+  .about-image {
     grid-area: image;
   }
 
-  .review-paragraphs {
+  .review-paragraphs,
+  .about-para {
     grid-area: paragraphs;
   }
 
-  .synopsis {
-    grid-area: synopsis;
+  .synopsis,
+  .color-card {
+    grid-area: color-card;
     max-width: 465px;
   }
 }

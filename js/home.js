@@ -14,7 +14,7 @@ async function displayRecentReviews() {
     for (let i = 0; i < reviews.length; i++) {
       sliderContainer.innerHTML += `<div class="recent-card"><a href="blog-specific.html?id=${reviews[i].id}">
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
-                <h3 class="heading-posts">${reviews[i].acf.book_title}</h3></a></div>`;
+                <h2 class="heading-posts">${reviews[i].acf.book_title}</h2></a></div>`;
     }
   } catch (error) {}
 }

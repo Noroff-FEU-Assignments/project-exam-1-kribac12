@@ -23,7 +23,7 @@ async function displayReviews() {
     for (let i = 0; i < reviews.length; i++) {
       reviewContainer.innerHTML += `<a href="blog-specific.html?id=${reviews[i].id}"><div class="review-card">
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
-                <h3 class="heading-posts">${reviews[i].acf.book_title}</h3>
+                <h2 class="heading-posts">${reviews[i].acf.book_title}</h2>
                 <p class="review-card-p">Author: ${reviews[i].acf.author}</p>
                 <p class="review-card-p">Genre: ${reviews[i].acf.genre}</p>
                 <p class="review-card-p">Quote: "${reviews[i].acf.quote}"</p>
