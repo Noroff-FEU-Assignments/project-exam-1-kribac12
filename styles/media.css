@@ -83,16 +83,23 @@
     display: grid;
     grid-template-areas:
       "heading heading"
+      "subheading subheading"
       "image paragraphs"
       "color-card paragraphs";
     gap: 1.5rem;
     max-width: 100%;
   }
 
-  .headings-review,
+  .heading-review,
   .about-heading {
     grid-area: heading;
   }
+
+  .subheadings-review,
+  .subheading-about {
+    grid-area: subheading;
+  }
+
   .image-review,
   .about-image {
     grid-area: image;

@@ -42,7 +42,7 @@ function createReview(review) {
   reviewSpecificContainer.classList.remove("loader");
 
   reviewSpecificContainer.innerHTML += `
-<div class="headings-review"><h1 class="post-heading">${review.acf.heading}</h1>
+<h1 class="heading-review">${review.acf.heading}</h1><div class="subheadings-review">
 <h2 class="post-subheading">${review.acf.subheading}</h2>
 <p class="publish-date-p">Published: ${review.date.split(`T`)[0]}</p></div>
     <div class="image-review"><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div>
