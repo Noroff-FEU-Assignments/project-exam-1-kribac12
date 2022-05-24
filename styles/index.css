@@ -126,12 +126,12 @@ li {
   gap: 1.5rem;
 }
 
-.subscribe-section {
-  border: 2px solid var(--border-color);
+.subscribe-form {
+  border: 2px solid #ffff;
   border-radius: 5px;
   margin: 2rem 0rem;
   padding: 1rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .flex-para {
@@ -340,6 +340,11 @@ footer {
   justify-content: center;
 }
 
+/*Subscribe section*/
+.subscribe-form input {
+  margin: 0.5rem 0rem;
+}
+
 /*Blockquote inspired by https://codepen.io/chris22smith/pen/oQWavL*/
 .quote-brackets {
   display: inline-block;
@@ -399,7 +404,7 @@ cite {
 input,
 textarea {
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   margin: 0.5rem 0rem 2rem 0rem;
 }
 
