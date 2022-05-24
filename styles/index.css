@@ -128,8 +128,10 @@ li {
 
 .subscribe-section {
   border: 2px solid var(--border-color);
+  border-radius: 5px;
   margin: 2rem 0rem;
   padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .flex-para {
@@ -411,13 +413,17 @@ textarea {
   margin-left: 1rem;
 }
 
-.contact-info:first-child,
-.contact-form:first-child {
+.contact-section h2 {
   margin-top: 2rem;
+}
+
+.contact-form-container h2 {
+  margin-bottom: 3.6rem;
 }
 
 label {
   font-size: 20px;
+  color: var(--text-color);
 }
 
 .message {
