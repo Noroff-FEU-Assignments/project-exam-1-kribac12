@@ -244,6 +244,11 @@ img {
   background-color: rgb(234, 234, 234, 0.9);
 }
 
+.to-top {
+  display: flex;
+  flex-direction: column;
+}
+
 /*Loader*/
 
 .loader {
