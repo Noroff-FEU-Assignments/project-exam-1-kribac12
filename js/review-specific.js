@@ -44,8 +44,10 @@ function createReview(review) {
   reviewSpecificContainer.innerHTML = "";
   reviewSpecificContainer.classList.remove("loader");
 
+  //adding breadcrumbs
   breadcrumbSpecific.innerHTML += `${review.acf.book_title}`;
 
+  //adding review in container
   reviewSpecificContainer.innerHTML += `
 <h1 class="heading-review">${review.acf.heading}</h1><div class="subheadings-review">
 <h2 class="post-subheading">${review.acf.subheading}</h2>
@@ -56,6 +58,7 @@ function createReview(review) {
     review.acf.paragraph3
   }</p></div>`;
 
+  //adding image modal
   imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }
 

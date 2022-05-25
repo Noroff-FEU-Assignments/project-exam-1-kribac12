@@ -2,6 +2,8 @@ const sliderContainer = document.querySelector(".posts-slider-container");
 const sliderWrap = document.querySelector(".posts-slider-wrap");
 const url = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
 
+//function for displaying recent posts in carousel slider
+
 async function displayRecentReviews() {
   try {
     const response = await fetch(url);
@@ -26,7 +28,7 @@ async function displayRecentReviews() {
 
 displayRecentReviews();
 
-/*arrows for slider function*/
+// arrows for slider function
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 

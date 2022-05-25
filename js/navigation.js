@@ -3,6 +3,7 @@
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const menuLinks = document.querySelector(".menu-links");
 
+//opening the responsive menu
 hamburgerIcon.addEventListener("click", makeMenuResponsive);
 
 function makeMenuResponsive() {
@@ -11,6 +12,8 @@ function makeMenuResponsive() {
 }
 
 const menuLink = document.querySelectorAll(".menu-link");
+
+// closing the menu
 menuLink.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {

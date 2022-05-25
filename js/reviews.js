@@ -3,14 +3,15 @@ const reviewContainer = document.querySelector(".review-container");
 const reviewUrl = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?per_page=";
 const afcFormat = "&&acf_format=standard";
 
-/*load more button and adding posts*/
 const loadMoreButton = document.querySelector(".load-more-button");
+
+// adding posts
 let numberOfPosts = 10;
 function countPosts() {
   numberOfPosts += 10;
 }
 
-/*displaying the reviews*/
+//displaying the reviews on review page
 
 async function displayReviews() {
   try {
@@ -38,7 +39,7 @@ async function displayReviews() {
 
 displayReviews();
 
-/*load more event and disable button function*/
+//load more event and disable button function
 
 function disableButton() {
   loadMoreButton.style.display = "none";

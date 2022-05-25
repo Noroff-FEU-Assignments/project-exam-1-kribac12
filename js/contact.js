@@ -14,6 +14,7 @@ const messageError = document.querySelector("#message-error");
 
 const validationContainer = document.querySelector(".validation-container");
 
+//function for validation
 function validateForm(form) {
   form.preventDefault();
 
@@ -49,6 +50,7 @@ function validateForm(form) {
 
 contactForm.addEventListener("submit", validateForm);
 
+// checking character count
 function checkLength(value, len) {
   if (value.trim().length >= len) {
     return true;
@@ -56,7 +58,7 @@ function checkLength(value, len) {
     return false;
   }
 }
-
+// validate e-mail
 function validateEmail(email) {
   const regEx =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

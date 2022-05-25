@@ -125,7 +125,7 @@ li {
 .synopsis {
   max-width: 465px;
   background-color: var(--cards-color);
-  padding: 0.2rem 1rem;
+  padding: 1rem 0.6rem;
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
