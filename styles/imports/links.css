@@ -15,6 +15,7 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 18px;
+  color: var(--text-color);
 }
 
 .cta-wide {
@@ -26,7 +27,7 @@ a {
 }
 
 .cta-small {
-  width: 160px;
+  width: 165px;
   text-transform: none;
 }
 

@@ -31,6 +31,7 @@ async function displayReviews() {
                 </a>`;
     }
   } catch (error) {
+    reviewContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
     console.log(error);
   }
 }

@@ -62,7 +62,10 @@
 }
 
 @media only screen and (min-width: 624px) {
-  p {
+  /*fonts*/
+
+  p,
+  .cta {
     font-size: 20px;
   }
 
@@ -80,13 +83,11 @@
 
   .review-specific-container,
   .about-grid {
-    display: grid;
     grid-template-areas:
       "heading heading"
       "subheading subheading"
       "image paragraphs"
       "color-card paragraphs";
-    gap: 1.5rem;
     max-width: 100%;
   }
 
@@ -113,7 +114,6 @@
   .synopsis,
   .color-card {
     grid-area: color-card;
-    max-width: 465px;
   }
 }
 
@@ -133,6 +133,13 @@
   .nav-header {
     justify-content: left;
     padding: 0rem;
+  }
+
+  /*fonts*/
+
+  h1,
+  .h2-home {
+    font-size: 1.6rem;
   }
 }
 

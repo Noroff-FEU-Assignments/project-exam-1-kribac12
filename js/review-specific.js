@@ -8,6 +8,8 @@ const url = baseUrl + id + "?acf_format=standard";
 const reviewSpecificContainer = document.querySelector(".review-specific-container");
 const imageModal = document.querySelector(".image-modal");
 
+const breadcrumbSpecific = document.querySelector(".breadcrumb-specific");
+
 //Function to show the review and modal image
 async function showReview() {
   try {
@@ -28,7 +30,7 @@ async function showReview() {
     }
   } catch (error) {
     console.log(error);
-    reviewSpecificContainer.innerHTML = "error";
+    reviewSpecificContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
   }
 }
 
@@ -39,7 +41,10 @@ function createReview(review) {
   document.title = "";
   document.title = `Fabulous fiction | ${review.acf.heading}`;
 
+  reviewSpecificContainer.innerHTML = "";
   reviewSpecificContainer.classList.remove("loader");
+
+  breadcrumbSpecific.innerHTML += `${review.acf.book_title}`;
 
   reviewSpecificContainer.innerHTML += `
 <h1 class="heading-review">${review.acf.heading}</h1><div class="subheadings-review">

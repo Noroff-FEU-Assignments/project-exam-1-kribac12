@@ -7,6 +7,8 @@ async function displayRecentReviews() {
     const response = await fetch(url);
     const reviews = await response.json();
 
+    sliderContainer.innerHTML = "";
+
     sliderContainer.classList.remove("loader");
 
     sliderContainer.style.overflowX = "scroll";
@@ -16,7 +18,10 @@ async function displayRecentReviews() {
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
                 <h2 class="heading-posts">${reviews[i].acf.book_title}</h2></a></div>`;
     }
-  } catch (error) {}
+  } catch (error) {
+    sliderContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
+    console.log(error);
+  }
 }
 
 displayRecentReviews();
