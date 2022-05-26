@@ -34,17 +34,22 @@ const arrowRight = document.querySelector("#arrow-right");
 
 arrowLeft.onclick = function () {
   const carouselWidth = sliderContainer.offsetWidth;
-  arrowRight.style.display = "block";
   sliderContainer.scrollLeft -= carouselWidth;
+  arrowRight.style.opacity = "1.0";
+  console.log(sliderContainer.scrollWidth - carouselWidth);
+  console.log(sliderContainer.scrollLeft);
+  if (sliderContainer.scrollLeft === 0) {
+    arrowLeft.style.opacity = "0.25";
+  }
 };
 
 arrowRight.onclick = function () {
   const carouselWidth = sliderContainer.offsetWidth;
-  arrowLeft.style.display = "block";
+  sliderContainer.scrollLeft += carouselWidth;
+  arrowLeft.style.opacity = "1.0";
   console.log(sliderContainer.scrollWidth - carouselWidth);
   console.log(sliderContainer.scrollLeft);
   if (sliderContainer.scrollLeft >= 0.9 * (sliderContainer.scrollWidth - carouselWidth)) {
-    arrowRight.style.display = "none";
+    arrowRight.style.opacity = "0.25";
   }
-  sliderContainer.scrollLeft += carouselWidth;
 };
