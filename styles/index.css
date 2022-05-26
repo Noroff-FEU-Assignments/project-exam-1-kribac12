@@ -146,7 +146,7 @@ li {
 .subscribe-form {
   border: 2px solid #ffff;
   border-radius: 5px;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem 2rem 0rem;
   padding: 1rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
