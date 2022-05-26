@@ -23,6 +23,7 @@ p {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0.6rem 0rem;
+  max-width: 670px;
 }
 
 h1,
@@ -93,7 +94,7 @@ h3,
 }
 
 .subscribe-form h2 {
-  margin: 2rem 0rem 1rem 0rem;
+  margin: 1rem 0rem;
 }
 
 /* UTILITIES */
@@ -117,7 +118,7 @@ li {
 /*Containers and cards*/
 
 .body-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -162,6 +163,7 @@ li {
 .about-grid {
   display: grid;
   gap: 1.5rem;
+  max-width: 465px;
 }
 
 /*Header and nav*/
@@ -497,10 +499,6 @@ label {
 
 /*review specific container*/
 
-.review-specific-container {
-  max-width: 465px;
-}
-
 .review-paragraphs p,
 .synopsis p,
 .p-space {
@@ -508,7 +506,3 @@ label {
   margin: 1rem 0rem;
 }
 /* ABOUT page */
-
-.about-para {
-  max-width: 465px;
-}
