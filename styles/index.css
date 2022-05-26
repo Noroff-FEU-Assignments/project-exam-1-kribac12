@@ -56,8 +56,7 @@ h2 {
 }
 
 .heading-posts {
-  display: inline-block;
-  max-width: 300px;
+  display: block;
   margin-top: 0.3rem;
 }
 
@@ -95,6 +94,11 @@ h3,
 
 .subscribe-form h2 {
   margin: 1rem 0rem;
+}
+
+.recent-card h2 {
+  text-align: center;
+  font-size: 18px;
 }
 
 /* UTILITIES */
@@ -342,7 +346,7 @@ footer {
   font-size: 20px;
 }
 
-.posts-slider-container:-webkit-scrollbar {
+.posts-slider-container::-webkit-scrollbar {
   display: none;
 }
 
