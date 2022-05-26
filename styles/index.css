@@ -337,6 +337,7 @@ footer {
   gap: 0.8rem;
   scroll-behavior: smooth;
   position: relative;
+  font-size: 20px;
 }
 
 .posts-slider-container:-webkit-scrollbar {
@@ -347,6 +348,7 @@ footer {
   position: relative;
   overflow: hidden;
   min-width: 95%;
+  margin-bottom: 1rem;
 }
 
 .recent-card:hover,

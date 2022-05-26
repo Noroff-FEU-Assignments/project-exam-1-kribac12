@@ -13,6 +13,7 @@ async function displayAbout() {
   } catch (error) {
     console.log(error);
     aboutContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
+    aboutContainer.style.paddingTop = "7rem";
   }
 }
 

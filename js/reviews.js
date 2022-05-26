@@ -18,8 +18,6 @@ async function displayReviews() {
     const response = await fetch(reviewUrl + numberOfPosts + afcFormat);
     const reviews = await response.json();
 
-    reviewContainer.classList.remove("loader");
-
     reviewContainer.innerHTML = "";
     for (let i = 0; i < reviews.length; i++) {
       reviewContainer.innerHTML += `<a href="blog-specific.html?id=${reviews[i].id}"><div class="review-card">

@@ -30,7 +30,7 @@ async function showReview() {
     }
   } catch (error) {
     console.log(error);
-    reviewSpecificContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
+    reviewSpecificContainer.innerHTML = "An error occurred while calling the API, please try again later. " + error + ".";
   }
 }
 
@@ -42,7 +42,6 @@ function createReview(review) {
   document.title = `Fabulous fiction | ${review.acf.heading}`;
 
   reviewSpecificContainer.innerHTML = "";
-  reviewSpecificContainer.classList.remove("loader");
 
   //adding breadcrumbs
   breadcrumbSpecific.innerHTML += `${review.acf.book_title}`;

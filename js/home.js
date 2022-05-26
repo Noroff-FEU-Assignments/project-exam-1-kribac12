@@ -1,5 +1,6 @@
 const sliderContainer = document.querySelector(".posts-slider-container");
 const sliderWrap = document.querySelector(".posts-slider-wrap");
+const error = document.querySelector(".error");
 const url = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
 
 //function for displaying recent posts in carousel slider
@@ -11,8 +12,6 @@ async function displayRecentReviews() {
 
     sliderContainer.innerHTML = "";
 
-    sliderContainer.classList.remove("loader");
-
     sliderContainer.style.overflowX = "scroll";
 
     for (let i = 0; i < reviews.length; i++) {
@@ -21,7 +20,8 @@ async function displayRecentReviews() {
                 <h2 class="heading-posts">${reviews[i].acf.book_title}</h2></a></div>`;
     }
   } catch (error) {
-    sliderContainer.innerHTML = "An error occurred while calling the API, please try again later " + error;
+    sliderContainer.innerHTML = "An error occurred while calling the API, please try again later. " + error;
+    sliderContainer.style.margin = "2rem";
     console.log(error);
   }
 }
