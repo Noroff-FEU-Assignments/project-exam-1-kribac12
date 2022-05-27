@@ -22,12 +22,12 @@ async function displayRecentReviews() {
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
                 <h2 class="heading-posts">${reviews[i].acf.book_title}</h2></a></div>`;
     }
-    // reducing the opacity of the left arrow since it cannot be used
-    arrowLeft.style.opacity = "0.25";
+    /* reducing the opacity and cursor style of the left arrow and make cursor style default(arrow) since it cannot be used*/
+    arrowLeft.style.opacity = "0.4";
+    arrowLeft.style.cursor = "default";
   } catch (error) {
     sliderContainer.innerHTML = "An error occurred while calling the API, please try again later. " + error;
     sliderContainer.style.margin = "2rem";
-    console.log(error);
   }
 }
 
@@ -38,11 +38,13 @@ arrowLeft.onclick = function () {
   const carouselWidth = sliderContainer.offsetWidth;
   // adjust (scroll left) the slider container by carouselWidth
   sliderContainer.scrollLeft -= carouselWidth;
-  // set the transparency/opacity of right arrow to 1.0 (fully visible)
+  /* set the transparency/opacity of right arrow to 1.0 (fully visible), and make the cursor style pointer*/
   arrowRight.style.opacity = "1.0";
-  // if we have reached the leftmost end of the carousel, reduce opacity of left arrow
+  arrowRight.style.cursor = "pointer";
+  // if we have reached the leftmost end of the carousel, reduce opacity of left arrow and make cursor style default*/
   if (sliderContainer.scrollLeft === 0) {
     arrowLeft.style.opacity = "0.4";
+    arrowLeft.style.cursor = "default";
   }
 };
 
@@ -51,12 +53,12 @@ arrowRight.onclick = function () {
   const carouselWidth = sliderContainer.offsetWidth;
   // adjust (scroll towards the right) the slider container by carouselWidth
   sliderContainer.scrollLeft += carouselWidth;
-  // set the transparency/opacity of the left arrow to 1.0 (fully visible)
+  /* set the transparency/opacity of the left arrow to fully visible, and add pointer for cursor */
   arrowLeft.style.opacity = "1.0";
-  // if we have reached the rightmost end of the carousel, reduce opacity of right arrow
+  arrowLeft.style.cursor = "pointer";
+  /* if we have reached the rightmost end of the carousel, reduce opacity of right arrow and change cursor style to default*/
   if (sliderContainer.scrollLeft >= 0.9 * (sliderContainer.scrollWidth - carouselWidth)) {
     arrowRight.style.opacity = "0.4";
+    arrowRight.style.cursor = "default";
   }
 };
-
-function refreshSlider() {}

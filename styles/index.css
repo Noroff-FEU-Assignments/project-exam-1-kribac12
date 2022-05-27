@@ -22,7 +22,8 @@ body {
 p {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
   font-size: 18px;
-  margin: 0.6rem 0rem;
+  margin: 1rem 0rem 1.8rem 0rem;
+  line-height: 1.5rem;
   max-width: 670px;
 }
 
@@ -38,7 +39,6 @@ h1 {
   text-transform: uppercase;
   display: grid;
   grid-column: -1/1;
-  padding-top: 7.5rem;
   margin-bottom: 1rem;
 }
 
@@ -88,10 +88,6 @@ h3,
   margin-top: 0rem;
 }
 
-.review-card-p {
-  font-weight: 300;
-}
-
 .subscribe-form h2 {
   margin: 1rem 0rem;
 }
@@ -99,6 +95,10 @@ h3,
 .recent-card h2 {
   text-align: center;
   font-size: 18px;
+}
+
+.h2-about {
+  margin-left: 0rem;
 }
 
 /* UTILITIES */
@@ -110,7 +110,6 @@ li {
 .breadcrumbs {
   display: flex;
   padding: 0;
-  padding-top: 7.5rem;
 }
 
 .breadcrumb {
@@ -126,8 +125,12 @@ li {
   margin: 0 auto;
 }
 
+.content-container,
+.content-container-home {
+  margin: 0rem 0.8rem;
+}
 .content-container {
-  margin: 0rem 2rem;
+  padding-top: 7.5rem;
 }
 
 .color-card,
@@ -159,7 +162,6 @@ li {
 .flex-para {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   justify-content: center;
 }
 
@@ -257,11 +259,14 @@ img {
 .to-top {
   display: flex;
   flex-direction: column;
+  text-align: -webkit-center;
+  text-align: -moz-center;
 }
 
 /*Loader*/
 
 .loader {
+  display: block;
   border: 1rem solid var(--cards-color);
   border-top: 1rem solid var(--icon-color);
   border-radius: 50%;
@@ -314,7 +319,7 @@ footer {
 
 .welcome-box {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.76);
   margin: 0 auto;
   padding: 0.9rem 0.5rem;
   margin-top: 5rem;
@@ -322,7 +327,7 @@ footer {
 
 .welcome-text {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 300;
   text-transform: none;
   margin: 0rem;
@@ -371,8 +376,11 @@ footer {
   border-radius: 50%;
 }
 
-.about-grid-homepage .flex-para {
-  justify-content: center;
+.about-grid-homepage {
+  background-color: var(--cards-color);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 /*Subscribe section*/
@@ -502,11 +510,10 @@ label {
 }
 
 /*review specific container*/
-
 .review-paragraphs p,
 .synopsis p,
 .p-space {
-  line-height: 1.2;
-  margin: 1rem 0rem;
+  margin: 1.8rem 0rem;
 }
+
 /* ABOUT page */

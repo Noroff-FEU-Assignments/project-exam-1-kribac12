@@ -19,7 +19,7 @@ a {
 }
 
 .cta-wide {
-  width: 250px;
+  width: 220px;
 }
 
 .cta-100 {
@@ -39,12 +39,13 @@ a {
 }
 
 .cta-border {
+  background-color: #ffff;
   border: 2px solid var(--text-color);
 }
 
 button {
-  background-color: var(--icon-color);
-  border: 1px solid var(--icon-color);
+  background-color: var(--cta-light-color);
+  border: 1px solid var(--cta-light-color);
 }
 
 /*Hover, focus and active styles*/
@@ -59,17 +60,17 @@ a:hover {
 
 .cta:hover,
 nav a:hover {
-  background-color: var(--border-color);
-  border-color: var(--border-color);
+  background-color: var(--cta-dark-color);
+  border-color: var(--cta-dark-color);
   font-weight: bold;
 }
 
 nav a:focus,
 .cta:focus {
-  background-color: var(--cards-color);
+  background-color: var(--darker-color);
 }
 
 nav a:active,
 .cta:active {
-  border-color: var(--cards-color);
+  border-color: var(--darker-color);
 }

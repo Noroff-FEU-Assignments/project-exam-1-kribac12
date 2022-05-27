@@ -16,8 +16,6 @@ async function showReview() {
     const response = await fetch(url);
     const review = await response.json();
 
-    console.log(review);
-
     createReview(review);
 
     /*Function to open modal (inspired by http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html)*/

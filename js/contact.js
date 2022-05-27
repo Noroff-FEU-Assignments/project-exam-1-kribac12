@@ -3,7 +3,7 @@ const contactForm = document.querySelector(".contact-form");
 const fullName = document.querySelector("#full-name");
 const fullNameError = document.querySelector("#full-name-error");
 
-const email = document.querySelector("#email");
+const emailContact = document.querySelector("#email-contact");
 const emailError = document.querySelector("#email-error");
 
 const subject = document.querySelector("#subject");
@@ -24,7 +24,7 @@ function validateForm(form) {
     fullNameError.style.display = "block";
   }
 
-  if (validateEmail(email.value) === true) {
+  if (validateEmail(emailContact.value) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
@@ -42,7 +42,7 @@ function validateForm(form) {
   }
 
   // Success message if message was sent
-  if (checkLength(fullName.value, 6) && checkLength(subject.value, 16) && checkLength(message.value, 26) && validateEmail(email.value)) {
+  if (checkLength(fullName.value, 6) && checkLength(subject.value, 16) && checkLength(message.value, 26) && validateEmail(emailContact.value)) {
     validationContainer.style.display = "block";
     contactForm.reset();
   }
@@ -59,9 +59,9 @@ function checkLength(value, len) {
   }
 }
 // validate e-mail
-function validateEmail(email) {
+function validateEmail(emailContact) {
   const regEx =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const patternMatches = regEx.test(email);
+  const patternMatches = regEx.test(emailContact);
   return patternMatches;
 }

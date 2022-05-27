@@ -43,7 +43,6 @@
   .about-grid-homepage {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
 
   .review-container {
@@ -130,7 +129,8 @@
     margin-top: 11.5rem;
   }
 
-  .content-container {
+  .content-container,
+  .content-container-home {
     margin: 0rem 4rem;
   }
 
@@ -151,5 +151,9 @@
   .review-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4.3rem;
+  }
+
+  .about-grid-homepage {
+    grid-template-columns: 1fr 2fr;
   }
 }
