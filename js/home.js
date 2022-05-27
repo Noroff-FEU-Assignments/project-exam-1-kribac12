@@ -20,7 +20,8 @@ async function displayRecentReviews() {
     for (let i = 0; i < reviews.length; i++) {
       sliderContainer.innerHTML += `<div class="recent-card"><a href="blog-specific.html?id=${reviews[i].id}">
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
-                <h2 class="heading-posts">${reviews[i].acf.book_title}</h2></a></div>`;
+                <div class="recent-card-text"><h2 class="heading-posts">${reviews[i].acf.book_title}</h2>
+                <p>${reviews[i].acf.paragraph1}(...)</p></a></div></div>`;
     }
     /* reducing the opacity and cursor style of the left arrow and make cursor style default(arrow) since it cannot be used*/
     arrowLeft.style.opacity = "0.4";

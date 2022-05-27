@@ -172,6 +172,10 @@ li {
   max-width: 465px;
 }
 
+.recent-card-text {
+  max-width: 85%;
+  margin: 0rem auto;
+}
 /*Header and nav*/
 
 .logo {

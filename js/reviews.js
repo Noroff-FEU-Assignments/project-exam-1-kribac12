@@ -48,3 +48,20 @@ loadMoreButton.addEventListener("click", function () {
   displayReviews();
   disableButton();
 });
+
+//search input
+
+let reviews = [];
+const inputSearch = document.querySelector(".input-search");
+const searchInput = document.querySelector("#search-input");
+
+inputSearch.addEventListener("keyup", () => {
+  const searchValue = searchInput.value.toLowerCase();
+  console.log(searchValue);
+  const resultReviews = reviews.filter((reviews) => {
+    console.log(resultReviews);
+    return reviews.acf.heading.toLowerCase().includes(searchValue);
+  });
+
+  displayReviews(resultReviews);
+});
