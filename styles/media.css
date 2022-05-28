@@ -1,4 +1,4 @@
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   /*Nav*/
   .menu-links {
     position: absolute;
@@ -38,7 +38,9 @@
   }
 }
 
-@media only screen and (min-width: 488px) {
+/*SMALLER TABLETS*/
+
+@media only screen and (min-width: 481px) {
   /*grid, flex, containers*/
   .about-grid-homepage {
     display: grid;
@@ -51,16 +53,22 @@
     gap: 1.5rem;
   }
 
+  .recent-card {
+    min-width: 98%;
+  }
+
   footer {
     margin: 4rem;
   }
 }
 
+/*BIGGER TABLETS*/
+
 @media only screen and (min-width: 624px) {
   /*fonts*/
 
   .recent-card {
-    min-width: 33%;
+    min-width: 48%;
   }
   p,
   .cta {
@@ -124,7 +132,9 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+/*SMALL SCREENS AND LAPTOPS*/
+
+@media only screen and (min-width: 769px) {
   .welcome-header {
     min-height: 14rem;
   }
@@ -151,6 +161,16 @@
     font-size: 1.6rem;
   }
 }
+
+/*DESKTOPS, LARGE SCREENS*/
+
+@media only screen and (min-width: 1025px) {
+  .recent-card {
+    min-width: 32.5%;
+  }
+}
+
+/*EXTRA LARGE SCREENS*/
 
 @media only screen and (min-width: 1214px) {
   .review-container {

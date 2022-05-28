@@ -17,7 +17,7 @@ const validationContainer = document.querySelector(".validation-container");
 
 const button = document.querySelector("#send-message");
 
-//function for validation
+// VALIDATION OF FORM
 function validateForm(form) {
   form.preventDefault();
 
@@ -44,17 +44,16 @@ function validateForm(form) {
     subjectError.style.display = "block";
   }
 
-  // Success message if message was sent
+  // SUCCESS MESSAGE if message was sent
   if (checkLength(fullName.value, 6) && checkLength(subject.value, 16) && checkLength(message.value, 26) && validateEmail(emailContact.value)) {
     validationContainer.style.display = "block";
-    button.style.display = "none";
     contactForm.reset();
   }
 }
 
 contactForm.addEventListener("submit", validateForm);
 
-// checking character count
+// Checking CHARACTER COUNT
 function checkLength(value, len) {
   if (value.trim().length >= len) {
     return true;
@@ -62,7 +61,7 @@ function checkLength(value, len) {
     return false;
   }
 }
-// validate e-mail
+// Validate E-MAIL REGEX
 function validateEmail(email) {
   const regEx =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

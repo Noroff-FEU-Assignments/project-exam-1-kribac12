@@ -10,7 +10,7 @@ const imageModal = document.querySelector(".image-modal");
 
 const breadcrumbSpecific = document.querySelector(".breadcrumb-specific");
 
-//Function to show the review and modal image
+//Function to SHOW REVIEW and MODAL IMAGE
 async function showReview() {
   try {
     const response = await fetch(url);
@@ -18,7 +18,7 @@ async function showReview() {
 
     createReview(review);
 
-    /*Function to open modal (inspired by http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html)*/
+    /*Function to OPEN MODAL (inspired by http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html)*/
     if (createReview) {
       const image = document.querySelector(".review-specific-container img");
 
@@ -34,17 +34,18 @@ async function showReview() {
 
 showReview();
 
-//Function to create HTML for review
+//Function to CREATE HTML for review
 function createReview(review) {
   document.title = "";
   document.title = `Fabulous fiction | ${review.acf.heading}`;
 
+  //removing loader, content
   reviewSpecificContainer.innerHTML = "";
 
-  //adding breadcrumbs
+  //adding BREADCRUMBS
   breadcrumbSpecific.innerHTML += `${review.acf.book_title}`;
 
-  //adding review in container
+  //ADDING REVIEW in container
   reviewSpecificContainer.innerHTML += `
 <h1 class="heading-review">${review.acf.heading}</h1><div class="subheadings-review">
 <h2 class="post-subheading">${review.acf.subheading}</h2>
@@ -55,11 +56,11 @@ function createReview(review) {
     review.acf.paragraph3
   }</p></div>`;
 
-  //adding image modal
+  //ADDING IMAGE MODA
   imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }
 
-/*Event listener and function to close modal (inspired by: https://stackoverflow.com/questions/70539763/how-do-i-open-modal-with-javascript-without-using-jquery)*/
+/*Event listener and function to CLOSE MODAL (inspired by: https://stackoverflow.com/questions/70539763/how-do-i-open-modal-with-javascript-without-using-jquery)*/
 
 document.addEventListener("click", closeImageModal);
 

@@ -3,16 +3,17 @@ const sliderWrap = document.querySelector(".posts-slider-wrap");
 const error = document.querySelector(".error");
 const url = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/review?acf_format=standard";
 
-// arrows for slider function
+// ARROWS for slider function
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 
-//function for displaying recent posts in carousel slider
+//Function for DISPLAYING RECENT POSTS in carousel slider
 async function displayRecentReviews() {
   try {
     const response = await fetch(url);
     const reviews = await response.json();
 
+    //removing loader, content
     sliderContainer.innerHTML = "";
 
     sliderContainer.style.overflowX = "scroll";
@@ -23,7 +24,7 @@ async function displayRecentReviews() {
                 <div class="recent-card-text"><h2 class="heading-posts">${reviews[i].acf.book_title}</h2>
                 <p>${reviews[i].acf.paragraph1}(...)</p></a></div></div>`;
     }
-    /* reducing the opacity and cursor style of the left arrow and make cursor style default(arrow) since it cannot be used*/
+    /* Reducing the OPACITY and CURSOR style of the left arrow and make cursor style default(arrow) since it cannot be used*/
     arrowLeft.style.opacity = "0.4";
     arrowLeft.style.cursor = "default";
   } catch (error) {
@@ -34,15 +35,20 @@ async function displayRecentReviews() {
 
 displayRecentReviews();
 
+// ARROW ONCLICK FUNCTIONS FOR SLIDER
+
 arrowLeft.onclick = function () {
-  // variable containing the current offset width of the carousel slider
+  // Variable containing the current offset width of the carousel slider
   const carouselWidth = sliderContainer.offsetWidth;
-  // adjust (scroll left) the slider container by carouselWidth
+
+  // Adjust (scroll left) the slider container by carouselWidth
   sliderContainer.scrollLeft -= carouselWidth;
-  /* set the transparency/opacity of right arrow to 1.0 (fully visible), and make the cursor style pointer*/
+
+  /* Set the transparency/opacity of right arrow to 1.0 (fully visible), and make the cursor style pointer*/
   arrowRight.style.opacity = "1.0";
   arrowRight.style.cursor = "pointer";
-  // if we have reached the leftmost end of the carousel, reduce opacity of left arrow and make cursor style default*/
+
+  // If we have reached the leftmost end of the carousel, reduce opacity of left arrow and make cursor style default*/
   if (sliderContainer.scrollLeft === 0) {
     arrowLeft.style.opacity = "0.4";
     arrowLeft.style.cursor = "default";
@@ -50,14 +56,14 @@ arrowLeft.onclick = function () {
 };
 
 arrowRight.onclick = function () {
-  // variable containing the current offset width of carousel slider
+  // Variable containing the current offset width of carousel slider
   const carouselWidth = sliderContainer.offsetWidth;
-  // adjust (scroll towards the right) the slider container by carouselWidth
+  // Adjust (scroll towards the right) the slider container by carouselWidth
   sliderContainer.scrollLeft += carouselWidth;
-  /* set the transparency/opacity of the left arrow to fully visible, and add pointer for cursor */
+  /* Set the transparency/opacity of the left arrow to fully visible, and add pointer for cursor */
   arrowLeft.style.opacity = "1.0";
   arrowLeft.style.cursor = "pointer";
-  /* if we have reached the rightmost end of the carousel, reduce opacity of right arrow and change cursor style to default*/
+  /* If we have reached the rightmost end of the carousel, reduce opacity of right arrow and change cursor style to default*/
   if (sliderContainer.scrollLeft >= 0.9 * (sliderContainer.scrollWidth - carouselWidth)) {
     arrowRight.style.opacity = "0.4";
     arrowRight.style.cursor = "default";

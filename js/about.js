@@ -2,7 +2,8 @@ const aboutContainer = document.querySelector(".about-grid");
 
 const aboutUrl = "https://fabulousfictio.wpengine.com/wp-json/wp/v2/about/130";
 const acf = "?acf_format=standard";
-//displaying about me on about page
+
+//DISPLAYING ABOUT ME on about page
 
 async function displayAbout() {
   try {
@@ -19,9 +20,10 @@ async function displayAbout() {
 
 displayAbout();
 
+// CREATING POST about me
 function createAboutPost(about) {
+  //removing loader, content
   aboutContainer.innerHTML = "";
-  aboutContainer.classList.remove("loader");
 
   aboutContainer.innerHTML += `
     <h1 class="about-heading">${about.acf.heading}</h1>

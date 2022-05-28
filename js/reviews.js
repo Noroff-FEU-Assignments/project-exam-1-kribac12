@@ -5,19 +5,20 @@ const afcFormat = "&&acf_format=standard";
 
 const loadMoreButton = document.querySelector(".load-more-button");
 
-// adding posts
+// ADDING POSTS
 let numberOfPosts = 10;
 function countPosts() {
   numberOfPosts += 10;
 }
 
-//displaying the reviews on review page
+//DISPLAYING REVIEWS on review page
 
 async function displayReviews() {
   try {
     const response = await fetch(reviewUrl + numberOfPosts + afcFormat);
     const reviews = await response.json();
 
+    //removing loader, content
     reviewContainer.innerHTML = "";
     for (let i = 0; i < reviews.length; i++) {
       reviewContainer.innerHTML += `<a href="blog-specific.html?id=${reviews[i].id}"><div class="review-card">
@@ -37,7 +38,7 @@ async function displayReviews() {
 
 displayReviews();
 
-//load more event and disable button function
+//LOAD MORE event and DISABLE BUTTON function
 
 function disableButton() {
   loadMoreButton.style.display = "none";
@@ -49,7 +50,7 @@ loadMoreButton.addEventListener("click", function () {
   disableButton();
 });
 
-//search input
+/*Started working on search function, but had to focus on level 1
 
 let reviews = [];
 const inputSearch = document.querySelector(".input-search");
@@ -65,3 +66,4 @@ inputSearch.addEventListener("keyup", () => {
 
   displayReviews(resultReviews);
 });
+*/
