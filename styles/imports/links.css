@@ -62,7 +62,6 @@ a:hover {
 nav a:hover {
   background-color: var(--cta-dark-color);
   border-color: var(--cta-dark-color);
-  font-weight: bold;
 }
 
 nav a:focus,

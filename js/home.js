@@ -22,7 +22,7 @@ async function displayRecentReviews() {
       sliderContainer.innerHTML += `<div class="recent-card"><a href="blog-specific.html?id=${reviews[i].id}">
               <img src=${reviews[i].acf.image} alt ="${reviews[i].acf.heading}" class="review-img"/>
                 <div class="recent-card-text"><h2 class="heading-posts">${reviews[i].acf.book_title}</h2>
-                <p>${reviews[i].acf.paragraph1.slice(0, 133)}(...)</p><p class="color-p"><strong>Read more ➝</strong></p></a></div></div>`;
+                <p>${reviews[i].acf.paragraph1.slice(0, 133)}(...)</p><div class="cta cta-small cta-border">Read more ➝</div></a></div></div>`;
     }
     /* Reducing the OPACITY and CURSOR style of the left arrow and make cursor style default(arrow) since it cannot be used*/
     arrowLeft.style.opacity = "0.4";
