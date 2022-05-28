@@ -51,10 +51,6 @@
     gap: 1.5rem;
   }
 
-  .recent-card {
-    min-width: 33%;
-  }
-
   footer {
     margin: 4rem;
   }
@@ -63,6 +59,9 @@
 @media only screen and (min-width: 624px) {
   /*fonts*/
 
+  .recent-card {
+    min-width: 33%;
+  }
   p,
   .cta {
     font-size: 20px;
@@ -78,8 +77,8 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .footer-section {
-    grid-template-columns: 1fr 1fr 2fr;
+  .contact-form-container h2 {
+    margin-bottom: 3.3rem;
   }
 
   /*review specific page*/
@@ -118,6 +117,11 @@
   .color-card {
     grid-area: color-card;
   }
+
+  /*containers*/
+  .footer-section {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -136,7 +140,8 @@
 
   .nav-header {
     justify-content: left;
-    padding: 0rem;
+    padding: 0rem 0.3rem;
+    align-items: center;
   }
 
   /*fonts*/

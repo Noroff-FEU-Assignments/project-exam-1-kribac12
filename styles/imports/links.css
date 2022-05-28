@@ -8,7 +8,7 @@ a {
   display: block;
   cursor: pointer;
   padding: 1rem 1.5rem;
-  margin-top: 1.8rem;
+
   margin-bottom: 2rem;
   text-align: center;
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
@@ -35,7 +35,7 @@ a {
 .cta-center {
   margin: 0 auto;
   margin-top: 1.5rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 4rem;
 }
 
 .cta-border {

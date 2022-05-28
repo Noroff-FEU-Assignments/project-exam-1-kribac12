@@ -151,12 +151,18 @@ li {
   gap: 1.5rem;
 }
 
-.subscribe-form {
+.subscribe-form,
+.review-card,
+.recent-card {
   border: 2px solid #ffff;
   border-radius: 5px;
-  margin: 4rem 0rem 2rem 0rem;
+
   padding: 1rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 12px rgba(163, 118, 118, 0.1);
+}
+
+.subscribe-form {
+  margin: 4rem 0rem 2rem 0rem;
 }
 
 .flex-para {
@@ -203,8 +209,7 @@ nav a {
   width: 100%;
   height: 5rem;
   justify-content: space-between;
-  align-items: center;
-  padding: 0rem 1.6rem;
+  padding: 0.8rem 0.6rem 0rem 0.6rem;
 }
 
 .hamburger-icon {
@@ -459,7 +464,7 @@ textarea {
 
 .contact-info {
   display: grid;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .contact-info a {
@@ -469,10 +474,6 @@ textarea {
 
 .contact-section h2 {
   margin-top: 2rem;
-}
-
-.contact-form-container h2 {
-  margin-bottom: 3.6rem;
 }
 
 label {
@@ -486,6 +487,10 @@ label {
 
 .form-requirements {
   font-size: 16px;
+}
+
+.contact-form {
+  margin-top: 1.6rem;
 }
 
 /* BLOG page */
