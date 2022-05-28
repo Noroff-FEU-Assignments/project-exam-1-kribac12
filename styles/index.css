@@ -164,7 +164,7 @@ li {
   border-radius: 5px;
 
   padding: 1rem;
-  box-shadow: 0 5px 12px rgba(163, 118, 118, 0.1);
+  box-shadow: 0 5px 12px rgba(163, 118, 118, 0.15);
 }
 
 .subscribe-form {
@@ -326,7 +326,7 @@ footer {
 
 .welcome-header {
   display: block;
-  background: url(/images/header.jpg);
+  background: url(/images/header1.jpg);
   background-size: cover;
   min-height: 8rem;
   padding-top: 6rem;

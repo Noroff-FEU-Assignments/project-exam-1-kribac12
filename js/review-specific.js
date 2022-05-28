@@ -52,8 +52,8 @@ function createReview(review) {
 <p class="publish-date-p">Review published: ${review.date.split(`T`)[0]}</p></div>
     <div class="image-review"><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div>
     <div class="synopsis"><h2>Synopsis </h2> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
-   <div class="review-paragraphs"><h2>Review </h2> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph2}</p><p>${
-    review.acf.paragraph3
+   <div class="review-paragraphs"><h2>Review </h2> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph3}</p><p>${
+    review.acf.paragraph4
   }</p></div>`;
 
   //ADDING IMAGE MODA

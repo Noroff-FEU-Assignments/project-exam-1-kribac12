@@ -40,7 +40,7 @@ a {
 
 .cta-border {
   background-color: #ffff;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--text-color);
 }
 
 button {

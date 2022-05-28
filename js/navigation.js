@@ -1,4 +1,4 @@
-/*code inspired by https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci*/
+/*code inspired by https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const menuLinks = document.querySelector(".menu-links");
