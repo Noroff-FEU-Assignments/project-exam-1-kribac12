@@ -130,6 +130,11 @@
   .footer-section {
     grid-template-columns: 1fr 1fr 2fr;
   }
+
+  /*links*/
+  .cta-wide {
+    width: 25rem;
+  }
 }
 
 /*SMALL SCREENS AND LAPTOPS*/

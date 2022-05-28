@@ -101,6 +101,12 @@ h3,
   margin-left: 0rem;
 }
 
+.color-p {
+  background-color: var(--cta-light-color);
+  padding: 0.6rem;
+  width: fit-content;
+}
+
 /* UTILITIES */
 
 li {

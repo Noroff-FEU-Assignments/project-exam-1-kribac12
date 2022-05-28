@@ -49,7 +49,7 @@ function createReview(review) {
   reviewSpecificContainer.innerHTML += `
 <h1 class="heading-review">${review.acf.heading}</h1><div class="subheadings-review">
 <h2 class="post-subheading">${review.acf.subheading}</h2>
-<p class="publish-date-p">Published: ${review.date.split(`T`)[0]}</p></div>
+<p class="publish-date-p">Review published: ${review.date.split(`T`)[0]}</p></div>
     <div class="image-review"><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div>
     <div class="synopsis"><h2>Synopsis </h2> <p>${review.acf.synopsis1}</p><p>${review.acf.synopsis2}</p></div>
    <div class="review-paragraphs"><h2>Review </h2> <p>${review.acf.paragraph1}</p><p>${review.acf.paragraph2}</p><p>${review.acf.paragraph2}</p><p>${
