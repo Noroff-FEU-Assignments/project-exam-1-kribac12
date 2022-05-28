@@ -239,7 +239,7 @@ nav a {
 
 /*Images*/
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -454,6 +454,7 @@ cite {
   font-size: 1.8rem;
   background-color: var(--icon-color);
   max-width: 20rem;
+  margin-bottom: 1.5rem;
   padding: 1.5rem;
   font-weight: 300;
   text-align: center;

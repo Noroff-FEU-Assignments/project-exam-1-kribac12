@@ -43,7 +43,7 @@ function createReview(review) {
   reviewSpecificContainer.innerHTML = "";
 
   //adding BREADCRUMBS
-  breadcrumbSpecific.innerHTML += `${review.acf.book_title}`;
+  breadcrumbSpecific.innerHTML = `${review.acf.book_title}`;
 
   //ADDING REVIEW in container
   reviewSpecificContainer.innerHTML += `

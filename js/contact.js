@@ -3,7 +3,7 @@ const contactForm = document.querySelector(".contact-form");
 const fullName = document.querySelector("#full-name");
 const fullNameError = document.querySelector("#full-name-error");
 
-const emailContact = document.querySelector("#email");
+const emailContact = document.querySelector("#email-contact");
 
 const emailError = document.querySelector("#email-error");
 

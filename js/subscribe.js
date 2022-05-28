@@ -1,5 +1,5 @@
 const email = document.querySelector("#email");
-const subscribeButton = document.querySelector("button");
+const subscribeButton = document.querySelector("#subscribe-button");
 const subscribeForm = document.querySelector(".subscribe-form");
 const input = document.querySelector("input");
 
@@ -9,7 +9,7 @@ function validateSubscription(form) {
   form.preventDefault();
 
   if (validateEmail(email.value) === true) {
-    subscribeButton.innerHTML = "Thank you! Check your inbox :)";
+    subscribeButton.innerHTML = "Thank you! I'll be in touch :)";
   } else {
     subscribeButton.innerHTML = "Please use a valid e-mail.";
   }
