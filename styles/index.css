@@ -5,11 +5,11 @@
 
 body {
   box-sizing: border-box;
-  margin: 0;
   height: 100vh;
   width: 100%;
   color: var(--text-color);
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
+  margin: 0;
 }
 
 *,
@@ -21,10 +21,10 @@ body {
 /*Fonts, typography*/
 p {
   font-family: "Josefin Sans", Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  margin: 1rem 0rem 1.8rem 0rem;
+  font-size: 1.1rem;
+  max-width: 41.87rem;
   line-height: 1.5rem;
-  max-width: 670px;
+  margin: 1rem 0rem 1.8rem 0rem;
 }
 
 h1,
@@ -35,20 +35,21 @@ h2 {
 }
 
 h1 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
   display: grid;
   grid-column: -1/1;
+  font-size: 1.4rem;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.3rem;
   display: grid;
   grid-column: -1/1;
+  font-size: 1.3rem;
 }
 
-/*fonts specific*/
+/*Fonts specific*/
+
 .h2-home {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -80,8 +81,8 @@ h3,
 }
 
 .publish-date-p {
-  margin: 1.6rem 0rem 0rem 0rem;
   font-weight: 300;
+  margin: 1.6rem 0rem 0rem 0rem;
 }
 
 .review-paragraphs h2 {
@@ -93,8 +94,8 @@ h3,
 }
 
 .recent-card h2 {
+  font-size: 1.1rem;
   text-align: center;
-  font-size: 18px;
 }
 
 .h2-about {
@@ -105,6 +106,11 @@ h3,
   background-color: var(--cta-light-color);
   padding: 0.6rem;
   width: fit-content;
+}
+
+.to-top p,
+.copyright-p {
+  max-width: 100%;
 }
 
 /* UTILITIES */
@@ -149,6 +155,7 @@ li {
 
 .review-card {
   max-width: 465px;
+  padding: 1rem;
 }
 
 .favorites-categories {
@@ -162,13 +169,16 @@ li {
 .recent-card {
   border: 2px solid #ffff;
   border-radius: 5px;
-
-  padding: 1rem;
   box-shadow: 0 5px 12px rgba(163, 118, 118, 0.15);
 }
 
 .subscribe-form {
   margin: 4rem 0rem 2rem 0rem;
+  padding: 1rem;
+}
+
+.subscribe-form input {
+  margin: 0.5rem 0rem;
 }
 
 .flex-para {
@@ -180,14 +190,10 @@ li {
 .review-specific-container,
 .about-grid {
   display: grid;
-  gap: 1.5rem;
   max-width: 465px;
+  gap: 1.5rem;
 }
 
-.recent-card-text {
-  max-width: 85%;
-  margin: 0rem auto;
-}
 /*Header and nav*/
 
 .logo {
@@ -198,11 +204,11 @@ li {
 }
 
 nav a {
-  cursor: pointer;
   display: block;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 1rem;
+  cursor: pointer;
 }
 
 .nav-header {
@@ -244,13 +250,20 @@ img {
   object-fit: cover;
 }
 
+/*Hover and focus styles*/
+
 .review-img:hover,
-.review-img:focus {
+.review-img:focus,
+.profile-img:hover,
+.profile-img:focus {
   filter: brightness(0.6);
 }
 
-.image-review {
-  cursor: pointer;
+.recent-card:hover,
+.recent-card:focus,
+.review-card:hover,
+.review-card:focus {
+  box-shadow: 0 5px 12px rgba(163, 118, 118, 0.5);
 }
 
 /*Icons*/
@@ -264,8 +277,8 @@ img {
 }
 
 .fa-circle-xmark {
-  z-index: 1;
   display: flex;
+  z-index: 1;
   flex-direction: column;
   align-items: center;
   right: 3rem;
@@ -337,7 +350,7 @@ footer {
 
 .welcome-box {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.76);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   padding: 0.9rem 0.5rem;
   margin-top: 5rem;
@@ -352,11 +365,11 @@ footer {
   padding-top: 0rem;
 }
 
-/*Carousel slider*/
+/*Carousel slider, recent-card*/
 
 .posts-slider-wrap {
-  width: 100%;
   display: inline-flex;
+  width: 100%;
   gap: 0.6rem;
   align-items: center;
 }
@@ -366,7 +379,7 @@ footer {
   gap: 0.8rem;
   scroll-behavior: smooth;
   position: relative;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .posts-slider-container::-webkit-scrollbar {
@@ -378,6 +391,11 @@ footer {
   overflow: hidden;
   min-width: 95%;
   margin-bottom: 1rem;
+}
+
+.recent-card-text {
+  max-width: 85%;
+  margin: 0rem auto;
 }
 
 .recent-card:hover,
@@ -399,48 +417,6 @@ footer {
   width: 100%;
   padding: 2rem;
   border-radius: 5px;
-}
-
-/*Subscribe section*/
-.subscribe-form input {
-  margin: 0.5rem 0rem;
-}
-
-/*Blockquote inspired by https://codepen.io/chris22smith/pen/oQWavL*/
-.quote-brackets {
-  display: inline-block;
-  margin: 1.5rem 0rem;
-  padding-left: 1rem;
-  background-size: cover;
-  background-color: var(--background-color);
-}
-
-blockquote {
-  display: inline-block;
-  border-right: solid 0.6rem var(--border-color);
-  margin: 0;
-  padding: 1.5rem;
-  position: relative;
-}
-
-blockquote::before {
-  content: "\201C";
-  color: var(--text-color);
-  font-size: 7rem;
-  position: absolute;
-  left: -1rem;
-  top: 1rem;
-}
-
-cite {
-  color: var(--text-color);
-  display: block;
-  text-align: right;
-}
-
-.quote-brackets > * {
-  position: relative;
-  z-index: 1;
 }
 
 /* CONTACT page */
@@ -465,9 +441,10 @@ cite {
 
 input,
 textarea {
+  display: block;
   width: 100%;
-  font-size: 20px;
   height: 3.5rem;
+  font-size: 1.3rem;
   color: var(--text-color);
   margin: 0.5rem 0rem 2rem 0rem;
 }
@@ -487,7 +464,7 @@ textarea {
 }
 
 label {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: var(--text-color);
 }
 
@@ -533,6 +510,10 @@ label {
 .synopsis p,
 .p-space {
   margin: 1.8rem 0rem;
+}
+
+.image-review {
+  cursor: pointer;
 }
 
 /* ABOUT page */

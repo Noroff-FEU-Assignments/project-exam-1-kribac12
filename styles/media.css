@@ -1,5 +1,5 @@
 @media only screen and (max-width: 768px) {
-  /*Nav*/
+  /*Nav, hamburger responsive menu*/
   .menu-links {
     position: absolute;
     left: -110%;
@@ -48,19 +48,19 @@
 
 @media only screen and (min-width: 481px) {
   /*grid, flex, containers*/
-  .about-grid-homepage {
+  .about-grid-homepage,
+  .review-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .review-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
 
   .recent-card {
     min-width: 98%;
+    padding: 1rem;
   }
 
   footer {
@@ -72,23 +72,10 @@
 
 @media only screen and (min-width: 624px) {
   /*fonts*/
-
-  .recent-card {
-    min-width: 48%;
-  }
   p,
-  .cta {
-    font-size: 20px;
-  }
-
+  .cta,
   .recent-card h2 {
-    font-size: 20px;
-  }
-
-  /*contact page*/
-  .contact-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    font-size: 1.3rem;
   }
 
   .contact-form-container h2 {
@@ -133,6 +120,16 @@
   }
 
   /*containers*/
+
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .recent-card {
+    min-width: 48%;
+  }
+
   .footer-section {
     grid-template-columns: 1fr 1fr 2fr;
   }
@@ -146,6 +143,12 @@
 /*SMALL SCREENS AND LAPTOPS*/
 
 @media only screen and (min-width: 769px) {
+  .nav-header {
+    justify-content: left;
+    padding: 0rem 0.3rem;
+    align-items: center;
+  }
+
   .welcome-header {
     min-height: 14rem;
   }
@@ -157,12 +160,6 @@
   .content-container,
   .content-container-home {
     margin: 0rem 4rem;
-  }
-
-  .nav-header {
-    justify-content: left;
-    padding: 0rem 0.3rem;
-    align-items: center;
   }
 
   /*fonts*/
