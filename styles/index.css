@@ -207,7 +207,7 @@ nav a {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 1rem;
+  padding: 1.4rem 1rem;
   cursor: pointer;
 }
 
@@ -473,7 +473,7 @@ label {
 }
 
 .form-requirements {
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 .contact-form {
