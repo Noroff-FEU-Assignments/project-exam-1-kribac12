@@ -57,7 +57,11 @@ button {
   background-color: var(--background-color);
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover,
+.to-top:hover,
+.contact-info a:hover,
+.breadcrumbs a:hover {
   font-weight: bold;
 }
 
