@@ -56,7 +56,7 @@ function createReview(review) {
     review.acf.paragraph4
   }</p></div>`;
 
-  //ADDING IMAGE MODA
+  //ADDING IMAGE MODAL
   imageModal.innerHTML += ` <div class="flex-modal"><i class="fa-solid fa-circle-xmark"><p>Close</p></i><div><img src=${review.acf.image} alt ="Cover of ${review.acf.book_title}" class="review-img"/></div></div>`;
 }
 
