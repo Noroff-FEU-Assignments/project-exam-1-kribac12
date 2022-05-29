@@ -36,6 +36,12 @@
   .hamburger-icon.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /*Image modal mobile and smaller screens*/
+
+  .image-modal img {
+    width: 101%;
+  }
 }
 
 /*SMALLER TABLETS*/

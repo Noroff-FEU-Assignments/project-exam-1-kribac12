@@ -249,6 +249,10 @@ img {
   filter: brightness(0.6);
 }
 
+.image-review {
+  cursor: pointer;
+}
+
 /*Icons*/
 
 .fa-brands,
@@ -264,9 +268,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 1rem;
-  right: 0.5rem;
-  padding-top: 5rem;
+  right: 3rem;
+  padding-top: 3rem;
   position: absolute;
   background-color: rgb(234, 234, 234, 0.9);
 }
