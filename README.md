@@ -1,61 +1,62 @@
-## Project title
+# Project Exam 1
 
-IMAGE
+![Blog logo](/images/logo.svg)
 
-Simple overview of use / purpose of project
+The website contains reviews of fiction books, urging readers to find their new favorite book.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+The project aim is to make people read more, and make it easier for them to decide on their next book.
 
-You can add some bullet points if you'd like to:
+- Website simple to understand and use
+- Mobile first design
 
-List item 1
-List item 2
-List item 3
+### Planned changes
+
+- Adding search function
+- Adding possibility of commenting on posts
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-React.js
-Bootstrap
-
-## Getting Started
-
-Installing:
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-Clone the repo:
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-
-Install the dependencies:
-npm install
-
-Running:
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-npm run start
+- HTML
+- CSS
+- JS
+- Wordpress REST API
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate CONTRIBUTING.md and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+Hi, thanks for contributing to my Project Exam 1 :wave:
+
+For your pull request to be reviewed and accepted, the following points must be satisfied:
+
+### Rules of conduct
+
+- No sexism, racism, homophobia, transphobia, xenophobia or discrimination of any kind is accepted
+- No swear words accepted
+
+### Suggestions for enhancement
+
+- Be clear in your suggestions
+- Explain what interaction/design you expected and why the current one does not please you
+- Use screenshots to showcase your suggestions
+
+### Styleguide
+
+- Use [Prettier](https://prettier.io/) for code formatting
+- Images should be colorful, and all images should have 1 or more books in them.
+- Book images uploaded should have a width of 620px.
+- Enhancements should happen for the sake of the readers.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-My Twitter page
-
-My LinkedIn page
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[My LinkedIn page](https://www.linkedin.com/in/kristine-bache-a033ab173/)
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+- How to use the style element in JS: [JavaScript Style](https://www.javascripttutorial.net/javascript-dom/javascript-style/)
+- Choice of main color turquoise because of its associations: [Color meaning: Meaning of The Color Turquoise](https://www.bourncreative.com/meaning-of-the-color-turquoise)
+- Tips on line height and line width, etc.: [Six tips for better web typography](https://css-tricks.com/six-tips-for-better-web-typography/)
+- Inspiration for how to use a modal for images: [How TO- Modal Images](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html)
+- Inspiration for modal: [Open modal](https://stackoverflow.com/questions/70539763/how-do-i-open-modal-with-javascript-without-using-jquery)
+- Inspiration for responsive menu: [Let’s Build A Responsive Navbar and Hamburger Menu Using HTML, CSS, and Javascript](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
+- Thanks to teachers at Noroff for guidance
