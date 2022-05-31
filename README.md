@@ -6,10 +6,10 @@ The website contains reviews of fiction books, urging readers to find their new 
 
 ## Description
 
-The project aim is to make people read more, and make it easier for them to decide on their next book.
-
-- Website simple to understand and use
-- Mobile first design
+- My motivation for this project was learning more about how to use the Wordpress REST API and JavaScript
+- I chose to build this project because I have a passion for reading on want to help others get this passion as well
+- Hopefully, the project will make it easier for readers to know which books they should read next
+- I learned how to use the Wordpress REST API with projects, and how a blog should be organised
 
 ### Planned changes
 
