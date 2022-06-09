@@ -6,15 +6,15 @@ The website contains reviews of fiction books, urging readers to find their new 
 
 ## Description
 
-- My motivation for this project was learning more about how to use the Wordpress REST API and JavaScript
-- I chose to build this project because I have a passion for reading on want to help others get this passion as well
-- Hopefully, the project will make it easier for readers to know which books they should read next
-- I learned how to use the Wordpress REST API with projects, and how a blog should be organized, and more JS
+- My motivation for this project was learning more about how to use the Wordpress REST API and JavaScript.
+- I chose to build this project because I have a passion for reading on want to help others get this passion as well.
+- Hopefully, the project will make it easier for readers to know which books they should read next.
+- I learned how to use the Wordpress REST API with projects, and how a blog should be organized, and more JS.
 
 ### Planned changes
 
-- Adding search function
-- Adding possibility of commenting on posts
+- Adding search function.
+- Adding possibility of commenting on posts.
 
 ## Built With
 
@@ -31,18 +31,18 @@ For your pull request to be reviewed and accepted, the following points must be 
 
 ### Rules of conduct
 
-- No sexism, racism, homophobia, transphobia, xenophobia or discrimination of any kind is accepted
-- No swear words accepted
+- No sexism, racism, homophobia, transphobia, xenophobia or discrimination of any kind is accepted.
+- No swear words accepted.
 
 ### Suggestions for enhancement
 
 - Be clear in your suggestions
-- Explain what interaction/design you expected and why the current one does not please you
-- Use screenshots to showcase your suggestions
+- Explain what interaction/design you expected and why the current one does not please you.
+- Use screenshots to showcase your suggestions.
 
 ### Styleguide
 
-- Use [Prettier](https://prettier.io/) for code formatting
+- Use [Prettier](https://prettier.io/) for code formatting.
 - Images should be colorful, and all images should have 1 or more books in them.
 - Book images uploaded should have a width of 620px.
 - Enhancements should happen for the sake of the readers.
